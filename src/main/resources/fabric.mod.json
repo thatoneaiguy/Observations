@@ -1,0 +1,51 @@
+{
+	"schemaVersion": 1,
+	"id": "observations",
+	"version": "${version}",
+	"name": "Observations",
+	"description": "uhhh... idk",
+	"authors": [
+		"eeverest",
+		"8hiny"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+
+	"custom": {
+		"cardinal-components": [
+			"observations:star",
+			"observations:water",
+			"observations:trait"
+		]
+	},
+
+	"license": "CC0-1.0",
+	"icon": "assets/observations/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.eeverest.Observations"
+		],
+		"client": [
+			"com.eeverest.ObservationsClient"
+		],
+		"cardinal-components": [
+			"com.eeverest.Observations"
+		]
+	},
+	"mixins": [
+		"observations.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*",
+		"lodestone": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
